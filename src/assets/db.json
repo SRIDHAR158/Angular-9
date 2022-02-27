@@ -1,0 +1,32 @@
+{
+    "contacts": [
+      {
+        "id": 1,
+        "firstName": "ARC",
+        "lastName": "Tutorials"
+      },
+      {
+        "id": 2,
+        "firstName": "Raj",
+        "lastName": "Kumar"
+      },
+      {
+        "id": 3,
+        "firstName": "Suresh",
+        "lastName": "Appa"
+      },
+      {
+        "id": 4,
+        "firstName": "Youtube",
+        "lastName": "Angular"
+      }
+    ],
+
+    "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode"}
+    ],
+    "comments": [
+        {"id": 1, "body": "some comment", "postId": 1}
+    ],
+    "profile": { "name": "typicode" }
+}

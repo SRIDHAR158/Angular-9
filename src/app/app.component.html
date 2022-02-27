@@ -1,0 +1,169 @@
+<h1 class="bg-primary">Welcome</h1>
+<!-- <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">FIFA 2022</a> -->
+  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <!-- <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav> -->
+  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/venue">Venue</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/locations">Locations <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Stadiums
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+
+  </div> -->
+<!-- </nav> -->
+
+<!-- structural directives -->
+<!-- <div *ngIf="showMsg; then showThenMsg; else showElseMsg" >Show Message</div>
+<ng-template #showThenMsg>Show Then Message</ng-template>
+<ng-template #showElseMsg>Show Else Message</ng-template>
+
+<h4>ngSwitch Example</h4>
+
+<div [ngSwitch] = "switchValue">
+  
+    <div *ngSwitchCase = "1">Value passed is : 1</div>
+    <div *ngSwitchCase = "2">Value passed is : 2</div>
+    <div *ngSwitchCase = "'three'">Value passed is : 3</div>
+    <div *ngSwitchCase = "4">Value passed is : 4</div>
+    <div *ngSwitchDefault>This is the default value</div>
+
+</div> -->
+
+<!-- <h4>ngFor Example</h4>
+
+<table class="table">
+  <tr>
+    <th>User Id</th>
+    <th>Name</th>
+    <th>Index</th>
+    <th>First</th>
+    <th>Last</th>
+    <th>Odd</th>
+    <th>Even</th>
+  </tr>
+  <tr *ngFor = "let user of users; index as i; first as f; last as l; odd as o; even as e">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{i}}</td>
+    <td>{{f}}</td>
+    <td>{{l}}</td>
+    <td>{{o}}</td>
+    <td>{{e}}</td>
+  </tr>
+</table> -->
+
+<!-- <h4>ngStyle Example</h4>
+
+<a [ngStyle] = "{'color': colorVal, 'background-color': bgcolorVal}" href = "#">Learning Angular is fun</a>
+
+<h4>ngClass Example</h4>
+
+<div [ngClass] = "{'one': false, 'two': true}">Learning ngClass with expressions</div>
+
+<h4>Interpolation Example</h4>
+
+<div>{{subTitle}}</div>
+
+<div>{{epNum}}</div>
+
+<div>{{user.userId}} {{user.userName}} {{user.status}}</div>
+
+<h4>Property Binding Example</h4>
+
+<div [ngStyle]= "{color:colorVal1}">This is example of property Binding</div>
+
+<p [innerHTML] = 'subTitle'></p>
+
+<div [ngClass] = "'c1'">Setting class property via Property Binding</div>
+
+<input [placeholder] = "placeholderVal">
+
+<h4>Attribute Binding Example</h4>
+
+ This is an example for property binding. Below is an example for attribute binding 
+
+<a [href] = "hrefVal">Google</a>   
+
+<a [href] = "hrefVal" [attr.updateLink] = "updatedLink" [attr.data-link] = "updatedLink">Google</a>
+
+<h4>Event Binding Example</h4>
+
+<button (click)="showalert(10)">Click Me</button>
+
+<input (focus)="consolelog()" />
+
+<h4>Two Way Binding Example</h4>
+
+<input [(ngModel)]="firstname" />
+
+<div>{{firstname}}</div>
+
+<button (click)="readfirstname()">Read FirstName</button>
+
+<h4>Built In Pipes</h4>
+
+<div>{{user1.firstName | lowercase}}, {{user1.lastName | uppercase}}</div>
+
+<div>{{user1.DOB | date: 'MMMM dd yyyy'}}, {{user1.salary | currency: 'INR'}}, {{user1.salary | currency: 'INR' : 'code'}}</div>
+
+<div>{{user1 | json}}</div>
+
+<h4>Parameterized Pipes</h4>
+
+<div>{{user1.DOB | date: 'short'}}, {{user1.salary | currency: 'INR': 'INR': '3.0-0'}}</div>
+
+<h4>Chaining Pipes</h4>
+
+<div>{{user1.DOB | date: 'MMMM' | uppercase}}</div>
+
+<h4>Custom Pipes</h4>
+
+ <div>{{user2.city | highlight: user2.city}}</div> -->
+
+<!-- <ul>
+  <li *ngFor = 'let user of user2'>
+
+    <div [innerHTML] = "user.cityCode | highlight: user.cityCode"></div>
+
+  </li>
+</ul>  -->
+
+<!-- <div [innerHTML] = "user2.city | highlight: user2.city"></div> -->
+
+<h4>Routing Tutorials</h4>
+
+<ul>
+  <li><a href="/products">Products</a></li>
+  <li><a href="/product-view">Product View</a></li>
+  <li><a href="/product-edit">Product Edit</a></li>
+
+</ul>
+
+<div class="">
+<router-outlet></router-outlet>
+</div>

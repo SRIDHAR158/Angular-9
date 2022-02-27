@@ -1,0 +1,53 @@
+<p>contacts works!</p>
+
+<h2> List of Contacts</h2>
+
+<ul>
+    <li *ngFor = "let contact of contactList">
+        {{ contact.firstName }}
+    </li>
+</ul>
+
+<h2> Create New Contact</h2>
+
+<div *ngIf="msgTrue">Contact created successfully</div>
+
+<code>Reuse the code here from template driven forms i.e from signin component.html or reactive forms</code>
+<br/>
+
+<!-- <button (click)="addNewContact()">Add New Contact</button> -->
+
+<!-- Dynamic Form for post method -->
+<div class="container">
+<form #addNewContactForm="ngForm" (ngSubmit)="addNewContact(addNewContactForm)">
+    <div class="form-group">
+       <label for="exampleInputEmail1">Enter ID</label>
+       <input type="text" class="form-control" name="id" required ngModel />
+    </div>
+     
+    <div class="form-group">
+        <label for="exampleInputEmail1">Enter FirstName</label>
+        <input type="text" class="form-control" name="firstName" required ngModel />
+     </div>
+
+     <div class="form-group">
+        <label for="exampleInputEmail1">Enter lastName</label>
+        <input type="text" class="form-control" name="lastName" required ngModel />
+     </div>
+
+     <p> </p>
+
+    <button class="form-control" class="btn btn-primary" [disabled]="!addNewContactForm.valid">Add New Contact</button>
+
+</form>
+</div>
+
+<button (click)="updateContact(3);">Update Contact Id: 3</button>
+
+<button (click)="deleteContact(4);">Delete Contact Id: 4</button>
+
+<!-- The below template is for http param example. -->
+
+<button (click)="getContact()">Get Contact</button>  
+
+<button (click)="contactsService.callingFromTemplate()">Calling Directly</button>

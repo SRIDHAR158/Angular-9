@@ -1,0 +1,38 @@
+<h2>Sign In Page - Using Template Driven Forms</h2>
+<div class="container">
+<form #signInForm="ngForm" (ngSubmit)="loginUser(signInForm)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="emailAddress" ngModel email required #emailAddress="ngModel">
+      <small class="form-text text-muted" *ngIf="emailAddress.touched && !emailAddress.valid">Enter email address</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="passwordField" ngModel required #passwordField="ngModel">
+      <small class="form-text text-muted" *ngIf="passwordField.touched && !passwordField.valid">Enter password</small>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="termsField" ngModel required>
+      <label class="form-check-label" for="exampleCheck1">Agree To Terms</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input"  value = "male" id="genderField" name="genderField" ngModel>
+      <label class="form-check-label" for="exampleCheck1">Male</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input"  value = "female" id="genderField" name="genderField" ngModel>
+      <label class="form-check-label" for="exampleCheck1">Female</label>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Notes</label>
+      <textarea class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="notesField" ngModel></textarea>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!signInForm.valid">Submit</button>
+
+    <!-- <div class="form-group"> 
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div> -->
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+  </form>
+</div>  
